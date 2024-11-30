@@ -198,9 +198,8 @@ ul p{
   resize: none;
   border: 1px solid white;
   outline: none;
-  font-size: 18px;
-  font-weight: 700;
-  word-spacing: 0.1;
+  font-size: 16px;
+  font-weight: 600;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   background: transparent;
