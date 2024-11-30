@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MindPal</title>
+    <meta name="author" content="Ajala John">
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A platform to chat with an autoresponder, ask questions and get answers">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <div>
+      <img src=" download (1).jpeg" alt="bot icon">
+      <h2>Mind<span>Pal</span></h2>
+      </div>
+      <i class="bx bx-help-circle help"></i>
+    </header>
+    <main>
+      <ul class="help">
+        <p>About me</p>
+       I can perform a wide variety of tasks, all based on processing and understanding text. Here's a breakdown:<br /><br>
+       <b>Things I can do:</b>
+      <li> <b>Answer questions:</b> I can answer many types of questions, factual, comparative, definitional, hypothetical, and even some creative ones. My knowledge cutoff is 2021, however. </li>
+      <li><b>Generate text: </b>I can write stories, poems, articles, summaries, scripts, musical pieces, email, letters, etc. The quality depends on the prompt's clarity and complexity.</li>
+      <li><b>Translate languages:</b> I can translate text between many languages.</li>
+      <li><b>Summarize text:</b> I can condense large amounts of text into concise summaries.</li>
+      <li><b>Code:</b> I can generate code in various programming languages. I can also debug existing code and explain what it does. </li>
+      <li><b>Answer in different creative text formats:</b> I can write poems, code, scripts, musical pieces, email, letters, etc., in response to your requests.</li> 
+      <li><b>Follow instructions:</b> I can follow complex multi-step instructions.</li>
+      <li><b>Learn from provided data:</b> While I don't "learn" in the same way a human does, I can adapt my responses based on the input I receive. </li><br />
+      <b>Types of questions I can reply to:</b> <br>
+      <li>Factual questions: "What is the capital of France?"</li>
+      <li>Definitional questions:"What is the definition of photosynthesis?" </li>
+      <li>Comparative questions: "What are the differences between a dog and a wolf?"</li>
+      <li>Procedural questions: "How do I bake a cake?"</li>
+      <li>Explanatory questions: "Why is the sky blue?" </li>
+      <li>Hypothetical questions: "What would happen if gravity suddenly disappeared?" </li>
+      <li>Creative questions: "Write a short story about a talking dog."</li>
+     <li>Mathematical questions: "What is the square root of 144?" (within reason; very complex math is beyond my capabilities)</li>
+     <li>Coding questions: "Write a Python function to calculate the factorial of a number."</li><br />
+    
+     
+     <b>Things I cannot do:</b><br />
+     <li>Access real-time information: My knowledge is not connected to the live internet. I can't give you current stock prices or breaking news.</li>
+     <li>Have opinions or beliefs: I am an AI; I don't have personal feelings or biases. My responses are based on the data I've been trained on.</li>
+     <li>Provide medical, legal, or financial advice: My responses are for informational purposes only and should not be considered professional advice.</li>
+     <li>Understand sarcasm or complex humor consistently: While I can often recognize it, I might sometimes misinterpret nuanced humor.</li><br />
+     In short, I'm a powerful tool for generating and processing text, but my abilities are limited by my training data and lack of real-world experience. The clearer and more specific your instructions, the better my responses will be.
+     </ul>
+      <div class="msgContainer">
+        <p class="welcome">Welcome to MindPal bot, ask questions and get your answers correctly</p>
+      </div>
+     
+    </main>
+     
+      <div class="inputRegion">
+        <textarea type="text" name="input" id="content" placeholder="Enter your message" autofocus="true"></textarea>
+       <button name="send" id="send" onclick="send()">Send<span class ="bx bx-send"></span></button>
+      </div>
+    <script> 
+    document.querySelector(".help").onclick = (e)=>{
+      document.querySelector(".inputRegion").classList.toggle("hide");
+      document.querySelector("main .msgContainer").classList.toggle("hide");
+      document.querySelector("main ul").classList.toggle("show");
+      e.target.classList.toggle("bx-x-circle");
+    
+    }
+    
+    
+    </script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>

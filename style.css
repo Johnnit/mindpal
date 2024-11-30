@@ -1,0 +1,233 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  position: relative;
+  font-family: Sans-Serif;
+  background: whitesmoke;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+main::before{
+  content: "MindPal";
+  position: absolute;
+  top: 25%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 70px;
+  font-weight: 700;
+  opacity: 0.2;
+  color: green;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: black;
+  color:white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+  align-items: center;
+}
+header div{
+   display: flex;
+  gap:20px;
+  align-items: center;
+}
+header div h2{
+  font-size: 30px;
+  text-shadow: 1px 1px 1px white;
+}
+header div h2 span{
+  color: green;
+}
+header i{
+  font-size: 30px;
+  transition: .2s;
+}
+header div img{
+  width: 35px;
+  height:35px;
+  border-radius: 100%;
+}
+
+main{
+  position: relative;
+  transform: translateY(50px);
+  padding-top: 20px;
+  overflow-x: hidden;
+
+}
+ul{
+  padding: 15px 20px;
+  color:black;
+  display: none;
+
+}
+ul li{
+  color: black;
+  margin-top:10px;
+}
+ul p{
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.msgContainer{
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  -webkit-scrollbar: none;
+  scrollbar:none;
+  padding-bottom: 1000px;
+}
+.left{
+  position: relative;
+  max-width: 100%;
+  float: left;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.left img{
+  position: absolute;
+  left:-10px;
+  width: 35px;
+  height:35px;
+  border-radius: 100%;
+}
+.left .msgContent{
+  background: black;
+  border-bottom-left-radius:0;
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+}
+.dots{
+  display: flex;
+  gap: 5px;
+}
+.welcome{
+  color: black;
+  font-size: 25px;
+  transform: translateY(100%);
+  text-align: center;
+  line-height: 2;
+  font-weight: 700;
+  opacity: 0.4;
+}
+.left .msgContent .dots .dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  animation: pop 2s ease-in 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes pop{
+  0%{
+    transform: scale(1.2);
+    margin-left: 2px;
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.msgContent{
+  width: fit-content;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+.right{
+  max-width: 100%;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  align-items: flex-end;
+}
+.right .msgContent{
+  background: green;
+  border-top-right-radius:0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom:10px;
+}
+.right .msgContent i{
+  align-self: flex-end;
+  padding-left: 50px;
+  float: left;
+  color: white;
+  font-weight: 500;
+}
+.inputRegion{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  background: black;
+  padding: 5px 15px 15px;
+}
+.inputRegion.hide{
+  display: none;
+}
+.inputRegion textarea{
+  width: 70%;
+  padding: 20px 20px 5px 20px;
+  resize: none;
+  border: 1px solid white;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  word-spacing: 0.1;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background: transparent;
+  box-shadow: 2px 2px 2px white,
+          -2px -2px 2px white;
+          color: white;
+}
+button{
+  position: relative;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /*border-bottom-left-radius: 50px;*/
+  width: 30%;
+  font-size: 20px;
+  background: black;
+  box-shadow: 2px 2px 2px white,
+          -2px -2px 2px white;
+  color: white;
+  font-weight: 500;
+  border: 1px solid white;
+  outline: none;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+button span{
+  font-size: 30px;
+}
