@@ -54,7 +54,7 @@ let userMsg;
       //generate response to questions
   function generateReply(){
         
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=${API_KEY}`;
     
     
     //Request from API
